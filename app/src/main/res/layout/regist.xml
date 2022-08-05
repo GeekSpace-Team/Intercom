@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Içeri Girmek"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Maglumatlaryňyzy giriziň we tassyklaň. Eger hasabyňyz ýok bolsa täze döredeiň!"
+            android:fontFamily="verdana"
+            android:textSize="15sp"
+            android:layout_below="@id/t1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/edit_container"
+            android:layout_below="@id/t2"
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/roundedbgwhite"
+            >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:hint="Siziň ulanyjy adyňyz..."
+                android:background="@android:color/transparent"
+                android:textSize="17sp"
+                android:layout_margin="12dp"
+                android:padding="12dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#000"
+                />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Siziň açar sözüňiz"
+                android:background="@android:color/transparent"
+                android:textSize="17sp"
+                android:inputType="textPassword"
+                android:layout_margin="12dp"
+                android:padding="12dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasabyňyz ýokmy?"
+            android:textSize="18sp"
+            android:layout_below="@id/edit_container"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasap döretmek"
+            android:textSize="15sp"
+            android:onClick="gotoCreateAccount"
+            android:layout_below="@id/question"
+            android:textColor="#5362FB"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_account"
+            android:layout_margin="25dp"
+            android:drawableTint="#fff"
+            android:background="@drawable/buttonbg"
+            android:drawablePadding="-50dp"
+            android:text="Dowam et"
+            android:textStyle="normal"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            tools:targetApi="m"
+            android:paddingRight="20dp"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_24" />
+
+    </RelativeLayout>
+
+</ScrollView>

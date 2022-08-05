@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="65dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/app_name"
+               android:textSize="22sp"
+               android:textColor="#fff"
+               android:fontFamily="monospace"
+               android:layout_marginLeft="12dp"
+               android:layout_marginTop="17dp"
+               />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textSize="40sp"
+        android:maxLength="12"
+        android:layout_marginTop="30dp"
+        android:hint="0"
+        android:textAlignment="textEnd"
+        android:gravity="end" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/clear_one"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_baseline_backspace_24"
+                android:background="@android:color/transparent"
+                android:tint="#6EE173"
+                android:textColor="#F44336"
+                android:textSize="30sp"
+                android:layout_margin="12dp"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:singleLine="true"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="buttons"
+                android:text="7"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="buttons"
+                android:text="8"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="buttons"
+                android:text="9"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bolmek"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="alamats"
+                android:text="/"
+                android:textColor="#4CAF50"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="buttons"
+                android:text="4"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="buttons"
+                android:text="5"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="buttons"
+                android:text="6"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/kopeltmek"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="alamats"
+                android:text="*"
+                android:textColor="#4CAF50"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="buttons"
+                android:text="1"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="buttons"
+                android:text="2"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="buttons"
+                android:text="3"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="alamats"
+                android:text="-"
+                android:textColor="#4CAF50"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="C"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:textColor="#F44336"
+                android:textSize="30sp"
+                android:layout_margin="12dp"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="buttons"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/goshmak"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:onClick="alamats"
+                android:text="+"
+                android:textColor="#4CAF50"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/equals"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="="
+                android:background="@drawable/bgequal"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:layout_margin="12dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

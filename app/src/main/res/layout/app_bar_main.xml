@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:theme="@style/AppTheme.NoActionBar">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="@color/colorPrimary"-->
+<!--            app:popupTheme="@style/Widget.AppCompat.Light.PopupMenu.Overflow">-->
+
+
+
+<!--        </androidx.appcompat.widget.Toolbar>-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <ImageView
+        android:id="@+id/navBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_menu_24"
+        app:tint="#000"
+        android:layout_margin="12dp"/>
+
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:indeterminate="false"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/navBtn"
+        android:layout_marginRight="12dp"
+        android:maxHeight="10dip"
+        android:minHeight="10dip"
+        android:progress="5"
+        android:progressDrawable="@drawable/greenprogress" />
+
+
+<!--    <ProgressBar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="15dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_toRightOf="@id/navBtn"-->
+<!--        android:layout_marginLeft="12dp"-->
+<!--        style="@style/Progress"-->
+<!--        android:layout_marginRight="12dp"-->
+<!--        android:progress="60"-->
+
+<!--        />-->
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/ProgressBar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+           <ImageView
+               android:layout_gravity="right"
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_marginRight="5dp"
+               android:src="@drawable/ic_baseline_wifi_24"
+               />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            />
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rec"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/material_design_android_floating_action_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="@color/colorAccent"
+            fab:menu_colorPressed="#009688"
+            fab:menu_colorRipple="#99d4d4d4"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/fab_add"
+            fab:menu_labels_colorNormal="@color/colorAccent"
+            fab:menu_labels_colorPressed="#444"
+            fab:menu_labels_colorRipple="#66efecec"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="#f2f1f1"
+            fab:menu_labels_textSize="15sp"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="#66aff198"
+            fab:menu_shadowRadius="4dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="4dp"
+            fab:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#78909C"
+                android:src="@drawable/ic_baseline_wifi_24"
+                android:tint="#37414A"
+                fab:fab_label="WiFi"
+                android:layerType="hardware"
+                fab:fab_size="mini" />
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#78909C"
+                android:src="@drawable/ic_baseline_wifi_tethering_24"
+                android:tint="#37414A"
+
+                fab:fab_label="WiFi Hotspot"
+                android:layerType="hardware"
+                fab:fab_size="mini" />
+
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <Button
+            android:id="@+id/ppt"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="PTT"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="12dp"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

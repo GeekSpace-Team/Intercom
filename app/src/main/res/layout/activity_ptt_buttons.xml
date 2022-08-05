@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PttButtons">
+
+    <ImageButton
+        android:id="@+id/yza"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:tint="@color/defaultcolor"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/yza"
+        android:layout_marginTop="22dp"
+        android:text="PTT düwmeleri"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yza"
+        android:textSize="20sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/defaultcolor"
+        android:text="PTT düwmelerini goşmak üçin 'goşmak' düwmesine basyň we görkezmelere eýeriň"
+        />
+
+    <ScrollView
+        android:layout_below="@id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/one"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_baseline_skip_next_24"
+                    app:tint="@color/defaultcolor" />
+
+                <LinearLayout
+                    android:layout_toRightOf="@id/icon"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toLeftOf="@id/stop"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aýtdyr / Duruz düwmesi"
+                        android:textSize="18sp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/defaultcolor"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gürlemek üçin bir gezek bas we duruzmak üçin ýenede bas"
+                        android:textSize="15sp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/defaultcolor"
+                        />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/stop"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/redcyrcle"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_remove_circle_outline_24"
+                    android:tint="#fff"
+                    />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/two"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_baseline_volume_up_24"
+                    app:tint="@color/defaultcolor" />
+
+                <LinearLayout
+                    android:layout_toRightOf="@id/icon2"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toLeftOf="@id/stop2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ses düwmesi"
+                        android:textSize="18sp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/defaultcolor"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gürlemek üçin bir gezek bas we duruzmak üçin ýenede bas"
+                        android:textSize="15sp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/defaultcolor"
+                        />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/stop2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/redcyrcle"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_remove_circle_outline_24"
+                    android:tint="#fff"
+                    />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/supported_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kabul edilýän düwmeler"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="22dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="22dp"
+        android:src="@drawable/fab_add"
+        android:backgroundTint="@color/colorAccent"
+
+
+        />
+
+
+</RelativeLayout>

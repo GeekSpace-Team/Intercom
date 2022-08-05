@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupportedButtons">
+
+
+    <ImageButton
+        android:id="@+id/yza"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:tint="@color/defaultcolor"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/yza"
+        android:layout_marginTop="22dp"
+        android:text="Kabul edilýän düwmeler"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/yza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="20dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/volumeptt"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/volumeptt"
+                    />
+
+                <LinearLayout
+                    android:layout_toRightOf="@id/volumeptt"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Telefondaky ses düwmeleri"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Ses düwmeleri ses ýazgsysyny işjeňleşdirmek üçin ulanylyp bilner"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/playpause"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/play_pause_ptt"
+                    />
+
+                <LinearLayout
+                    android:layout_toRightOf="@id/playpause"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Simli gulaklygyň aýtdyr we duruz düwmeleri"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Simli gulaklygyň aýtdyr / duruz düwmeleri ses ýazgsysyny işjeňleşdirmek üçin ulanylyp bilner"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

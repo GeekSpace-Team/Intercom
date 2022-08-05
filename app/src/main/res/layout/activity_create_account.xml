@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/yza"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="yza"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@android:color/transparent"
+            android:tint="@color/blue"
+            android:layout_marginLeft="12dp" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Hasap döretmek"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Öýjükleri doldurmak arkaly özüňize hasap dörediň"
+            android:fontFamily="verdana"
+            android:textSize="15sp"
+            android:layout_below="@id/t1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/edit_container"
+            android:layout_below="@id/t2"
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/roundedbgwhite"
+            >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:hint="Siziň ulanyjy adyňyz..."
+                android:background="@android:color/transparent"
+                android:textSize="17sp"
+                android:layout_margin="12dp"
+                android:padding="12dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#000"
+                />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Siziň açar sözüňiz"
+                android:background="@android:color/transparent"
+                android:textSize="17sp"
+                android:inputType="textPassword"
+                android:layout_margin="12dp"
+                android:padding="12dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#000"
+                />
+
+
+            <EditText
+                android:id="@+id/gun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Siz bu hasaby näçe gün ulanmakçy?"
+                android:background="@android:color/transparent"
+                android:textSize="17sp"
+                android:inputType="number"
+                android:layout_margin="12dp"
+                android:padding="12dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasabyňyz barmy?"
+            android:textSize="18sp"
+            android:layout_below="@id/edit_container"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Içeri Girmek"
+            android:textSize="15sp"
+            android:onClick="yza"
+            android:layout_below="@id/question"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_account"
+            android:layout_margin="25dp"
+            android:drawableTint="#fff"
+            android:background="@drawable/buttonbg"
+            android:drawablePadding="-50dp"
+            android:text="Hasaba al"
+            android:textStyle="normal"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            tools:targetApi="m"
+            android:drawableRight="@drawable/ic_baseline_check_circle_outline_24"
+            android:paddingRight="20dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

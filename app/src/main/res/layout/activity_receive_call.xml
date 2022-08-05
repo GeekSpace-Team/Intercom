@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/callgradient"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ReceiveCallActivity" >
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:visibility="gone"
+        android:background="@drawable/blackcyrcle"
+        android:src="@drawable/ic_baseline_person_24"
+        android:padding="8dp"
+        app:tint="#fff" />
+
+    <TextView
+        android:id="@+id/textViewIncomingCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/incomingCall"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal" >
+
+
+
+        <ImageButton
+            android:id="@+id/buttonAccept"
+            android:layout_width="70dp"
+            android:layout_marginRight="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_call_end_24"
+            android:background="@drawable/greencyrcle"
+            android:scaleType="centerCrop"
+            android:padding="20dp"
+            android:tint="#fff"
+
+            />
+
+        <ImageButton
+            android:id="@+id/buttonReject"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_call_end_24"
+            android:background="@drawable/redcyrcle"
+            android:scaleType="centerCrop"
+            android:padding="20dp"
+            android:tint="#fff"
+
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/end"
+        android:visibility="gone"
+       android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal" >
+
+
+        <ImageButton
+            android:id="@+id/buttonEndCall1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_call_end_24"
+            android:background="@drawable/redcyrcle"
+            android:scaleType="centerCrop"
+            android:padding="20dp"
+            android:tint="#fff"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
